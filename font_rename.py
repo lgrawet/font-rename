@@ -61,7 +61,7 @@ def get_current_family_name(table: NameTable) -> str:
 
 
 def get_font_name(font: TTFont):
-    return get_current_family_name(font["name"])
+    return get_current_family_name(font["name"]).replace(" ", "_")
 
 
 def rename_font(filepath: Path, remove_unparsable: bool) -> None:
