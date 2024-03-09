@@ -2,8 +2,11 @@
 
 Renames fonts to their internal name and unpacks .ttc/.otc files.
 
+This is a fork of [whtsky/font-rename](https://github.com/whtsky/font-rename) to make it run with python >=3.11 and to replace spaces with underscores in font file names.
+
+Install it with `poetry install` and run it with
+
 ```bash
-pip install font-rename
 font-rename insert/directory/file/path/here
 ```
 
